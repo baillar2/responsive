@@ -1,15 +1,22 @@
-/* Background Colors*/
+/* Backgrounds */
 body {
 	background-color: moccasin;
 }
-.container {
+.background-color {
 	background-color: linen;
+}
+.body {
+	max-width: 920px;
+	margin:auto;
 }
 /* Navigation */
 .nav {
 	display: block;
 	text-align: center;
-	max-width: 300px;
+	max-width: 100%;
+	margin:auto;
+	padding-left: 0;
+	margin-bottom: 50px;
 
 }
 .nav li {
@@ -18,7 +25,7 @@ body {
     background-color: pink;
     border: thin solid midnightblue;
     border-radius: 5px;
-    padding: 5px .022% 5px .022%;
+    padding: 5px 1%; 
 }
 .nav li a {
 	text-decoration: none;
@@ -26,41 +33,130 @@ body {
 	font-size:20px;
 }
 
-/* Paragraph */
+/* Body Layout */
 .container {
-	max-width: 300px;
+	max-width: 100%;
 	display: block;
     margin: auto;
-    padding: 10px .016% 10px .016%;
+    padding: 10px 3%;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
+    clear: both;
 }
+.side-by-side {
+	position: relative;
+	max-width: 100%;
+	display: block;
+	margin:auto;
+
+}
+section {
+	position: relative;
+	display: inline-block;
+	float: left;
+	max-width: 50%;
+    margin: auto;
+    padding: 0 3%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+aside {
+	position: relative;
+	display: inline-block;
+	float: right;
+	max-width: 40%;
+}
+
 h1, h2, h3 {
 	display: inline-block;
 	font-weight: bold;
-	padding-left: .022%;
+	padding-left: 1%;
 	color: darkCyan;
 	margin-bottom: -20px;
 }
 p {
 	border:1px solid #d3d3d3;
-	padding:20px .011% 20px .011%;
+	padding:20px 1%;
+	padding-top: 0;
 	border-radius: 3px;
 }
 
-/* Image One */
+/* Images */
 .image1 {
-	display: block;
-	margin:auto;
 	border:thin solid black;
 	border-radius: 3px;
-}
+	width: 100%;	}
 .gallery {
 	text-align: center; 
 }
 .gallery img {
 	border:thin solid black;
 	border-radius: 3px;
-	margin:0 .011% 0 .011%;
+	margin:0 1%;
 }
+/* Responive */
+
+@media all and (max-width: 800px){
+
+	.body {
+		width: 100%;
+	}
+	aside {
+		display: block;
+		float: none;
+		margin:auto;
+		max-width: 50%;
+		text-align: center;
+		margin-top: 20px;
+		}
+
+	section {
+		display: block;
+		float: none;
+		margin: auto;
+		overflow: hidden;
+		}
+}
+@media all and (max-width: 665px){
+	.body {
+		width: 100%;
+	}
+	.gallery {
+		width: 400px;
+		margin:auto;
+		/*margin:5px 6%;*/
+
+	}
+}
+@media all and (max-width: 330px){
+	.body {
+		width: 100%;
+	}
+	.nav li {
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
