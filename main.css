@@ -21,6 +21,7 @@
 
 /* Paragraph */
 .container {
+	max-width: 920px;
 	display: block;
     margin: auto;
     padding: 10px 15px 10px 15px;
